@@ -48,7 +48,7 @@ public class DesafioAdiq {
 				 */
 				// Preparar Dados para Autorização		
 				Auth auth = new Auth(grantType, clientId, clientSecret, emproducao.toUpperCase());
-				if(!Auth.autorizado) {
+				if(Auth.autorizado) {
 					JOptionPane.showMessageDialog(null, "Autorizado, tenha um bom dia de trabalho!\n" + Auth.resposta + "\n" + Auth.accessToken);
 					String opMenu = null;
 					do {
