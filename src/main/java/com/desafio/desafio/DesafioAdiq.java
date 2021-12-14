@@ -41,11 +41,6 @@ public class DesafioAdiq {
 			   clientSecret != null &&
 			   resposta     == JOptionPane.YES_OPTION) 
 			{
-				/*
-				 * No Cabecalho
-				 * client_id = 35345
-				 * access_token = 1d968a5f-1829-3547-bd89-0c6049f88cf8 
-				 */
 				// Preparar Dados para Autorização		
 				Auth auth = new Auth(grantType, clientId, clientSecret, emproducao.toUpperCase());
 				if(Auth.autorizado) {
